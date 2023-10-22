@@ -12,7 +12,11 @@ const emojis = [
     "🤣",
     "🤣",
     "🤑",
-    "🤑"
+    "🤑",
+    "🥵",
+    "🥵",
+    "🤡",
+    "🤡"
 ];
 
 let openCards = [];
@@ -40,7 +44,7 @@ for(let i=0; i < emojis.length; i++)
     }
 
     function checkMath (){
-        if(openCards[0].innerHTML === openCards[1].innerHTML){
+        if(openCards[0].innerHTML == openCards[1].innerHTML){
             openCards[0].classList.add("boxMatch");
             openCards[1].classList.add("boxMatch");
         } else {
